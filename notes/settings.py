@@ -6,7 +6,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = os.environ.get('SECRET_KEY', 'django-insecure-@yr%csl&ve+iee23=2fu2wdzv%o!_q1i)gc0%_80y4^b_6@=f^')
 
-DEBUG = os.environ.get('DEBUG', 'False') == 'True'
+DEBUG = 'True'
 
 # CORS settings
 CORS_ALLOW_ALL_ORIGINS = True  # In production, you should list specific origins
@@ -18,6 +18,7 @@ CORS_ALLOW_CREDENTIALS = True
 ALLOWED_HOSTS = ['*']  # In production, specify your Railway domain
 CSRF_TRUSTED_ORIGINS = [
     'https://web-production-1eb76.up.railway.app',
+    'http://web-production-1eb76.up.railway.app',
 ]
 
 INSTALLED_APPS = [
