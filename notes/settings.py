@@ -19,6 +19,7 @@ ALLOWED_HOSTS = ['*']  # In production, specify your Railway domain
 CSRF_TRUSTED_ORIGINS = [
     'https://web-production-1eb76.up.railway.app',
     'http://web-production-1eb76.up.railway.app',
+    'https://react-notes-frontend-production.up.railway.app/'
 ]
 
 INSTALLED_APPS = [
